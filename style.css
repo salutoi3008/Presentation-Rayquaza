@@ -759,8 +759,9 @@ ul li strong {
 #overlay {
   position: fixed; inset: 0;
   background: rgba(8,10,20,0.96);
-  display: flex; align-items: center; justify-content: center;
-  visibility: hidden; opacity: 0;
+  display: none;
+  align-items: center; justify-content: center;
+  opacity: 0;
   transition: opacity 0.3s; z-index: 2000; cursor: zoom-out;
 }
 #overlay img {
@@ -768,8 +769,9 @@ ul li strong {
   object-fit: contain;
   border: 1px solid rgba(57,255,20,0.2);
   box-shadow: 0 0 60px rgba(57,255,20,0.1);
+  display: block;
 }
-#overlay.show { visibility: visible; opacity: 1; }
+#overlay.show { display: flex; opacity: 1; }
 
 /* ============================================================
    FOOTER
@@ -896,5 +898,5 @@ body.light-mode .header-content { /* reste sombre */ }
 
 @media (prefers-reduced-motion: reduce) {
   .rq-wrap, .stars-layer, .rq-diagonal::before, .rq-diagonal::after { animation: none; }
-  section { opacity: 1; transform: none; transition: none; }
+  section { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
