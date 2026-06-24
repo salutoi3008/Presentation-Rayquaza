@@ -3,8 +3,6 @@
 <!-- ============================================================ -->
 <!-- HEAD — Métadonnées, polices et feuille de style             -->
 <!-- ============================================================ -->
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +14,10 @@
 </head>
 <body>
 
-
-
 <!-- ============================================================ -->
 <!-- HEADER — Bannière principale avec étoiles, titre et stats  -->
 <!-- ============================================================ -->
   <header>
-    
     <!-- Fond étoilé animé -->
     <div class="stars" aria-hidden="true">
       <div class="stars-layer s1"></div>
@@ -30,10 +25,8 @@
       <div class="stars-layer s3"></div>
     </div>
 
-
     <!-- Ligne diagonale style sillage de Rayquaza -->
     <div class="rq-diagonal" aria-hidden="true"></div>
-
 
     <!-- Contenu central : titre, stats, badges de type -->
     <div class="header-content">
@@ -66,17 +59,13 @@
       </div>
     </div>
 
-
     <!-- Bouton de basculement thème clair / sombre -->
     <button id="themeToggle" aria-label="Changer de thème">🌙</button>
   </header>
 
-
-
 <!-- ============================================================ -->
 <!-- NAV — Barre de navigation fixe                             -->
 <!-- ============================================================ -->
-
   <nav>
     <a href="https://salutoi3008.github.io/Trombinoscope-Anime-Manga/">Home</a>
     <a href="#présentation">Présentation</a>
@@ -86,15 +75,12 @@
     <a href="#images">Images</a>
   </nav>
 
-
 <!-- ============================================================ -->
 <!-- MAIN — Contenu principal                                    -->
 <!-- ============================================================ -->
   <main>
 
-
     <!-- 01 — PRÉSENTATION -->
-     
     <section id="présentation">
       <span class="section-label" aria-hidden="true">01</span>
       <div class="section-inner">
@@ -133,9 +119,7 @@
       </div>
     </section>
 
-
     <!-- 02 — LORE -->
-
     <section id="lore">
       <span class="section-label" aria-hidden="true">02</span>
       <div class="section-inner">
@@ -188,9 +172,7 @@
       </div>
     </section>
 
-
     <!-- 03 — FORMES -->
-
     <section id="formes">
       <span class="section-label" aria-hidden="true">03</span>
       <div class="section-inner">
@@ -201,7 +183,7 @@
 
           <div class="forme-card">
             <div class="forme-placeholder">
-              <img src="https://play.pokemonshowdown.com/sprites/ani/rayquaza.gif" alt="Rayquaza forme de base animé">
+              <img src="img/rayquaza.gif" alt="Rayquaza forme de base animé">
             </div>
             <h3>Forme de Base</h3>
             <p>La forme originale. 7 mètres de pure puissance. Son talent Air Lock annule tous les effets météo du terrain.</p>
@@ -214,7 +196,7 @@
           <div class="forme-card mega">
             <div class="forme-badge-mega">MÉGA-ÉVOLUTION</div>
             <div class="forme-placeholder">
-              <img src="https://play.pokemonshowdown.com/sprites/ani/rayquaza-mega.gif" alt="Méga-Rayquaza animé">
+              <img src="img/méga-rayquaza.gif" alt="Méga-Rayquaza animé">
             </div>
             <h3>Méga-Rayquaza</h3>
             <p>La forme ultime. Ailerons d'or, talent Souffle Delta. Le Pokémon le plus puissant jamais mesuré — banni du jeu compétitif.</p>
@@ -228,9 +210,7 @@
       </div>
     </section>
 
-
     <!-- 04 — CAPACITÉS -->
-
     <section id="capacités">
       <span class="section-label" aria-hidden="true">04</span>
       <div class="section-inner">
@@ -278,10 +258,7 @@
       </div>
     </section>
 
-
-  
     <!-- 05 — IMAGES -->
-
     <section id="images">
       <span class="section-label" aria-hidden="true">05</span>
       <div class="section-inner">
@@ -308,28 +285,22 @@
 
   </main>
 
-
-
 <!-- ============================================================ -->
 <!-- FOOTER — Copyright et lien retour                          -->
 <!-- ============================================================ -->
-
   <footer>
     <span class="footer-symbol">∞</span>
     <p>&copy; 2026 — Site consacré à Rayquaza</p>
     <a href="https://salutoi3008.github.io/Trombinoscope-Anime-Manga/">Retour au Trombinoscope</a>
   </footer>
 
-
   <!-- Bouton retour en haut (visible après 600px de scroll) -->
   <button id="backToTop" aria-label="Retour en haut">↑</button>
-
 
   <!-- OVERLAY ZOOM -->
   <div id="overlay">
     <img id="overlay-img" src="" alt="Image agrandie">
   </div>
-
 
   <!-- Script principal : zoom, scroll, thème -->
   <script src="script.js"></script>
